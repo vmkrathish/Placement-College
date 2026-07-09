@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main() {
+    
+    //Greatest of 3 nos
+    int a1, a2, a3;
+    printf("Enter 3 nos: ");
+    scanf("%d %d %d", &a1, &a2, &a3);
+    printf("Greatest of 3 nos : %d", (a1 > a2) ? ((a1 > a3) ? a1 : a3) : ((a2 > a3) ? a2 : a3) );
+    
+
+    int num;
+    printf("Enter the num: ");
+    scanf("%d", &num);
+    printf("Num divisible by: %d",
+    (num % 5 == 0) ? 5 : ((num % 7 == 0) ? 7 : 1)
+    );
+    
+    //Find the given num is +ve or -ve
+    int a;
+    printf("Enter the num: ");
+    scanf("%d", &a);
+    if (a>=0) printf("The num is positive");
+    else  printf("The num is negative");
+    
+    //Chech num is 3 digit num
+    
+    int num;
+    printf("Enter the num: ");
+    scanf("%d", &num);
+    if (num>=100 && num<=999) printf("The num is Three digit");
+    else  printf("The num is not a Three digit");
+    
+    
+    //num is mul of 11 and 32
+    int num;
+    printf("Enter the num: ");
+    scanf("%d", &num);
+    if (num % 7 == 0 && num % 32 == 0) printf("The num is divisible by both 7 & 32");
+    else  printf("The num is not divisible by both 7 & 32");
+  
+    
+    int num = 27;
+    if  (num % 3 == 0 && num % 9 == 0) {
+    printf("The num is divisible by both 3 & 7");
+    }
+    else if  (num % 3 == 0) {
+    printf("The num is divisible by 3");
+    }
+    else if  (num % 9 == 0) {
+    printf("The num is divisible by 7");
+    }
+    else{
+    printf("The num is not divisible by both 7 & 32");
+    }
+}
+
+
+
