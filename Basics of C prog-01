@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    // Size of the datatype
+  
+    int a = 5;
+    float b = 2.2;
+    double c = 2.3;
+    
+    printf("int: %d\nfloat: %d\ndouble: %d", sizeof(a),sizeof(b),sizeof(c));
+
+    return 0;
+    
+    //Addition of 2 nos
+    int a, b, c;
+    printf("Enter two nos. for addition:");
+    scanf("%d %d", &a, &b);
+    c = a + b;
+    printf("a + b = %d\n\n", c);
+    
+    //Area of triangle
+    int B, h;
+    float area;
+    printf("Enter breadth of triangle:");
+    scanf("%d", &B);
+    printf("Enter height of the triangle:");
+    scanf("%d", &h);
+    area = 0.5 * B * h;
+    printf("Area of Triangle = %.2f\n\n", area);
+    
+    //Circumference of the circle
+    int r;
+    float cir;
+    printf("Enter radius of the circle:");
+    scanf("%d", &r);
+    cir = (2 * 3.14) * r;
+    printf("Circumference of the circle: %.2f", cir);
+    }
+
+
+
